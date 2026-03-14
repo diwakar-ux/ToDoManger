@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600&family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+
+<title>Todo Manager</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="main">
+
+<h1 class="title">Todo Manager</h1>
+
+<div class="container">
+
+<label class="x-css">Task</label>
+<input id="x" class="js-info css-info" placeholder="Enter a Task">
+
+<label class="y-css">Set Due Date</label>
+<input id="y" class="js-date css-date" type="date">
+
+<button onclick="addTodoList()" class="add-button">Add Task</button>
+
+</div>
+
+<h2 class="header">Pending Tasks</h2>
+
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Due Date</th>
+<th>Options</th>
+</tr>
+</thead>
+
+<tbody class="js-result"></tbody>
+</table>
+
+<h2 class="completed-header">Completed Tasks</h2>
+
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Due Date</th>
+<th>Options</th>
+</tr>
+</thead>
+
+<tbody class="js-input-result"></tbody>
+</table>
+
+<h2 class="incomplete-header">Incomplete Tasks</h2>
+
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Due Date</th>
+<th>Options</th>
+</tr>
+</thead>
+
+<tbody class="js-incomplete"></tbody>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
